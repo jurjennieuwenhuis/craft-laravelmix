@@ -1,0 +1,16 @@
+{% import '_includes/forms.twig' as forms %}
+
+{{ forms.textField({
+  first: true,
+  label: 'Public dir'|t('laravelmix'),
+  name: 'publicDir',
+  value: settings.publicDir
+}) }}
+
+{{ forms.textField({
+  label: 'Manifest name'|t('laravelmix'),
+  name: 'manifestName',
+  value: settings.manifestName
+}) }}
+
+

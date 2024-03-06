@@ -1,0 +1,55 @@
+{
+  "name": "juni/craft-laravelmix",
+  "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "laravel",
+    "laravel mix",
+    "laravelmix"
+  ],
+  "license": "mit",
+  "authors": [
+    {
+      "name": "Jurjen Nieuwenhuis",
+      "homepage": "https://github.com/jurjennieuwenhuis/craft-laravelmix/"
+    }
+  ],
+  "extra": {
+    "handle": "laravelmix",
+    "name": "Laravel Mix",
+    "developer": "Jurjen Nieuwenhuis",
+    "documentationUrl": "https://github.com/jurjennieuwenhuis/craft-laravelmix/blob/main/README.md",
+    "class": "juni\\laravelmix\\LaravelMix"
+  },
+  "autoload": {
+    "psr-4": {
+      "juni\\laravelmix\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "5.*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "craftcms/ecs": "dev-main"
+  },
+  "scripts": {
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --ansi --fix",
+    "phpstan": "phpstan --memory-limit=1G"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
