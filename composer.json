@@ -1,5 +1,6 @@
 {
   "name": "juni/craft-laravelmix",
+  "description": "Laravel mix twig function for Craft CMS.",
   "type": "craft-plugin",
   "keywords": [
     "craft",
